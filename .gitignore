@@ -1,5 +1,6 @@
 /target
 Cargo.lock
 /output
+/mp3_chunks
 .zed/
 *.mp3
