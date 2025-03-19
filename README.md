@@ -1,6 +1,6 @@
 # MP3 Splitter
 
-A Rust-based tool to split large MP3 files into smaller chunks of specified duration while maintaining proper MP3 encoding.
+A Rust-based tool to split large MP3 files into smaller chunks of specified duration while maintaining proper MP3 encoding. This code is mainly produced by Copilot + Claude Sonnet 3.7, then reviewed, fixed and tested by me.
 
 ## Features
 
