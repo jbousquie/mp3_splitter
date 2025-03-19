@@ -49,7 +49,7 @@ The splitter uses a multi-pass approach:
 
 ## Output
 
-All split files are saved in the `output` directory with sequential numbering.
+All split files are saved in the `mp3_chunks` directory with sequential numbering. The directory is created if it doesn't exist.
 Each file includes ID3 tags with:
 - Updated title (original title + part number)
 - Track number information
