@@ -1,0 +1,5 @@
+/target
+Cargo.lock
+/output
+.zed/
+*.mp3

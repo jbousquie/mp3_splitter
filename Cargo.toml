@@ -1,0 +1,10 @@
+[package]
+name = "mp3_splitter"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "A tool to split MP3 files into chunks of a specified duration"
+
+[dependencies]
+id3 = "1.10.0"
+symphonia = { version = "0.5.3", features = ["mp3"] }
