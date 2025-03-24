@@ -30,9 +30,9 @@ This will split `podcast.mp3` into 10-minute chunks named:
 ### Default Values
 
 If no arguments are provided, the program will use these defaults:
-- Input file: `podcastfi.mp3` (in the current directory)
+- Input file: `audiofile.mp3` (in the current directory)
 - Chunk duration: 10 minutes
-- Output prefix: `output_part`
+- Output prefix: `audiofile_part`
 
 ## How It Works
 
@@ -54,3 +54,11 @@ Each file includes ID3 tags with:
 - Updated title (original title + part number)
 - Track number information
 - Comment with split details
+
+## Conversion
+
+You can use for instance `ffmpeg`to convert a `wav` audio file into a `mp3`audio file if needed.
+
+``` 
+ffmpeg -i audio.wav -acodec mp3 audio.mp3
+```

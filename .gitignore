@@ -4,3 +4,4 @@ Cargo.lock
 /mp3_chunks
 .zed/
 *.mp3
+*.wav
