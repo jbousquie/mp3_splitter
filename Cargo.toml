@@ -3,7 +3,18 @@ name = "mp3_splitter"
 version = "0.1.0"
 edition = "2021"
 authors = ["Your Name <your.email@example.com>"]
-description = "A tool to split MP3 files into chunks of a specified duration"
+description = "A library and tool to split MP3 files into chunks of a specified duration"
+license = "MIT"
+repository = "https://github.com/username/mp3_splitter"
+documentation = "https://docs.rs/mp3_splitter"
+
+[lib]
+name = "mp3_splitter"
+path = "src/lib.rs"
+
+[[bin]]
+name = "mp3_splitter"
+path = "src/main.rs"
 
 [dependencies]
 id3 = "1.10.0"
