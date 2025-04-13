@@ -19,7 +19,7 @@ fn main() -> io::Result<()> {
         println!("  Input file: {}", default_input.display());
         println!("  Chunk duration: 10 minutes");
         println!("  Output prefix: audiofile_part");
-        println!("  Output folder: mp3_chunks");
+        println!("  Output folder: audio_chunks");
         println!();
         println!("To specify custom parameters, use: cargo run -- <input_file> <chunk_minutes> <output_prefix>");
         
@@ -27,7 +27,7 @@ fn main() -> io::Result<()> {
     };
     
     let chunk_duration = minutes_to_duration(chunk_minutes);
-    let folder_name = "mp3_chunks";
+    let folder_name = "audio_chunks";
     match fs::create_dir(folder_name) {
         Ok(_) => println!("Directory {} created", folder_name),
         Err(_) => println!("Directory {} already exists", folder_name),

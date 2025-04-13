@@ -62,7 +62,7 @@ fn main() -> io::Result<()> {
     let options = SplitOptions {
         input_path: Path::new("podcast.mp3"),
         chunk_duration: minutes_to_duration(10), // 10 minute chunks
-        output_dir: Path::new("mp3_chunks"),
+        output_dir: Path::new("audio_chunks"),
         prefix: "podcast_part",
     };
     
@@ -101,7 +101,7 @@ The splitter uses a multi-pass approach:
 
 ## Output
 
-All split files are saved in the `mp3_chunks` directory with sequential numbering. The directory is created if it doesn't exist.
+All split files are saved in the `audio_chunks` directory with sequential numbering. The directory is created if it doesn't exist.
 Each file includes ID3 tags with:
 - Updated title (original title + part number)
 - Track number information
